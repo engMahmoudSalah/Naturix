@@ -77,52 +77,57 @@
 }
 
 
-.DownSec .sec2{
-    /* height: 200px; */
-    width: 100%;
-    /* background-color: gold; */
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding-top: 120px;
+.DownSec{
 
-    & .d-shape2 {
-        /* background-color: red; */
-        height: 30px;
-
-        & img {
-            /* background-color: blue; */
-            height: 15px;
-            animation: shape2 1s ease-in-out infinite alternate;
-        }
-    }
-
-    & .prands{
-        opacity: .7;
+    .sec2{
         /* height: 200px; */
         width: 100%;
+        /* background-color: gold; */
         display: flex;
-        flex-flow: row wrap;
-        /* background-color: black; */
-        gap: 30px;
-        justify-content: space-around;
+        flex-flow: column;
         align-items: center;
-        padding: 20px;
-
-        & .prand{
-            height: 50px;
-            width: 50px;
+        padding-top: 120px;
+    
+        & .d-shape2 {
             /* background-color: red; */
-
-            & .imgs{
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-
+            height: 30px;
+    
+            & img {
+                /* background-color: blue; */
+                height: 15px;
+                animation: shape2 1s ease-in-out infinite alternate;
+            }
+        }
+    
+        & .prands{
+            opacity: .7;
+            /* height: 200px; */
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            /* background-color: black; */
+            gap: 30px;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+    
+            & .prand{
+                height: 50px;
+                width: 50px;
+                /* background-color: red; */
+    
+                & .imgs{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+    
+                }
             }
         }
     }
-}
+
+
+} 
 
 @keyframes shape2 {
     0%{
