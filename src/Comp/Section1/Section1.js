@@ -56,7 +56,7 @@ export default function Example() {
       </div>
 
       <div class="w-full lg:px-8 p-5 flex flex-col justify-center items-center backdrop-blur-3xl h-full inset-0 bg-white/50">
-        <div class="mx-auto max-w-5xl lg:mx-0 flex flex-col justify-center items-center w-full pt-44 pb-20 sm:pb-0 lg:pt-0 lg:h-screen">
+        <div class="mx-auto max-w-5xl lg:mx-0 flex flex-col justify-center items-center w-full pt-40 pb-20 sm:pb-0 lg:pt-0 lg:h-screen">
           <img
             data-aos="fade-up"
             data-aos-duration="1000"
