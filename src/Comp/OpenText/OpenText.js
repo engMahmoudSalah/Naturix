@@ -19,7 +19,7 @@ const Accordion = () => {
         onClick={() => handleClick(0)}
         className={activeIndex === 0 ? "active" : ""}
       >
-        Food Donation
+        - Food Donation
       </h2>
       {activeIndex === 0 && (
         <div className=" text-sm text-slate-700">
@@ -33,7 +33,7 @@ const Accordion = () => {
         onClick={() => handleClick(1)}
         className={activeIndex === 1 ? "active" : ""}
       >
-        Expiration Date Notifications{" "}
+        - Expiration Date Notifications{" "}
       </h2>
       {activeIndex === 1 && (
         <div className=" text-sm text-slate-700">
@@ -46,7 +46,7 @@ const Accordion = () => {
         onClick={() => handleClick(2)}
         className={activeIndex === 2 ? "active" : ""}
       >
-        AI-Based Recepe Recommendation
+        - AI-Based Recepe Recommendation
       </h2>
       {activeIndex === 2 && (
         <div className=" text-sm text-slate-700">
@@ -61,7 +61,7 @@ const Accordion = () => {
         onClick={() => handleClick(3)}
         className={activeIndex === 3 ? "active" : ""}
       >
-        Shopping Basket Recommendations
+        - Shopping Basket Recommendations
       </h2>
       {activeIndex === 3 && (
         <div className=" text-sm text-slate-700">
@@ -76,7 +76,7 @@ const Accordion = () => {
         onClick={() => handleClick(4)}
         className={activeIndex === 4 ? "active" : ""}
       >
-        Food Recycling
+        - Food Recycling
       </h2>
       {activeIndex === 4 && (
         <div className=" text-sm text-slate-700">
@@ -91,7 +91,7 @@ const Accordion = () => {
         onClick={() => handleClick(5)}
         className={activeIndex === 5 ? "active" : ""}
       >
-        Community Interaction
+        - Community Interaction
       </h2>
       {activeIndex === 5 && (
         <div className=" text-sm text-slate-700">
