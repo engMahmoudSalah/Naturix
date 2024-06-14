@@ -67,7 +67,7 @@ export default function Example() {
           />
 
           <p className="mx-auto max-w-6xl font-display text-5xl font-medium tracking-tight text-center text-slate-900 sm:text-7xl">
-            Join us to reduce {" "}
+            Join <span className="hidden lg:inline-block mx-auto max-w-6xl font-display text-5xl font-medium tracking-tight text-center text-slate-900 sm:text-7xl  ">us</span> to reduce {" "}
             <span class="relative whitespace-nowrap text-teal-500">
               <svg
                 aria-hidden="true"
