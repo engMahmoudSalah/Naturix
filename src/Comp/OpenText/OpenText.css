@@ -1,0 +1,29 @@
+.Accordion{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    
+    
+    h2{
+        color: rgb(146, 156, 154);
+        padding-bottom: 5px;
+        cursor: pointer;
+        font-size: 24px;
+
+
+        
+    }
+    
+    h2.active{
+        color:  #0D9488;
+        border-bottom: 1.5px solid var(--main-main);
+        font-weight: 500;
+
+
+        
+    }
+
+    
+
+    
+}

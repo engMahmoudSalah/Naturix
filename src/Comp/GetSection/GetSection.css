@@ -1,0 +1,76 @@
+.i-abs{
+    position: absolute;
+
+}
+
+.img2-abs{
+    width: 200px;
+    left: 0px;
+    top: 150px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.img3-abs{
+    width: 150px;
+    right: -50px;
+    top: 0px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.img4-abs{
+    width: 150px;
+    right: 100px;
+    bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.gradient-mask-bottom {
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to top, transparent, black);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+  }
+
+.gradient-mask-top {
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to bottom, transparent, black);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.gradient-mask-left {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to left, transparent, black);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+
+.gradient-mask-right {
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to right, transparent, black);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+
+@media screen and (max-width:800px) {
+    .i-abs{
+        display: none;
+    
+    }
+    
+}
+
+
+
+.GetSection{
+
+    section{
+        .Grid{
+            z-index: 30;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.Sec22{
+    padding-inline: 5%;
+    padding-block: 3%;
+    /* margin-block: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 90%;
+    /* border-top: 1.5px solid #ccc; */
+    border-bottom: 1.5px solid #ccc;
+
+    .h3{
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .DownSec{
+        .sec2{
+            padding: 0px;
+            padding-top: 0px;
+            margin: 0px;
+        }
+    }
+}

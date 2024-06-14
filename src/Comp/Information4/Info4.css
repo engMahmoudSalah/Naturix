@@ -1,0 +1,49 @@
+.Info4 {
+  /* Additional styles if necessary */
+}
+
+.Info4 .transition-transform {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+.Info4 .order-first {
+  order: 1;
+}
+
+.Info4 .order-middle {
+  order: 2;
+}
+
+
+.Info4 .order-last {
+  order: 3;
+}
+
+
+.Info4 .active {
+  opacity: 1 !important;
+}
+
+.Info4 .inactive {
+  opacity: 0.6;
+}
+
+
+
+.trans{
+  transform: translateX(-100%);
+}
+
+.trans2 {
+  transform: translateX(100%);
+}
+
+.trans3{
+  transform: translateX(-200%);
+
+}

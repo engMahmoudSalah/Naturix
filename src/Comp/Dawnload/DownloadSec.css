@@ -1,0 +1,201 @@
+
+
+.DownSec{
+    position: relative;
+    width: 100%;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+.DownSec > .sec1 {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    /* height: 340px; */
+    width: 100%;
+    /* background-color: rgb(223, 227, 230); */
+    padding: 80px 0px 150px 0px;
+    gap: 20px;
+
+
+    & p{
+        text-transform: capitalize;
+    }
+
+
+    & .d-down-qrcode{
+        display: flex;
+        position: absolute;
+        bottom: -100px;
+        flex-flow: column;
+        align-items: center;
+
+        & h6{
+            margin: 20px;
+            color: rgb(2,164,146);
+            cursor: pointer;
+        }
+
+        & .d-QRcode{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(300deg , rgb(2,164,146),rgb(2,234,168));
+            border-radius: 20px;
+            padding: 15px;
+
+
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+
+            }
+        }
+
+    }
+
+
+    & .imgs{
+        position: absolute;
+        height: 160px;
+
+    }
+    
+    & .img1{
+        bottom: 0px;
+        left: -100px;
+    }
+
+    & .img2{
+        position: absolute;
+        top: 20px;
+        right:-100px;
+    }
+}
+
+
+.DownSec > .sec2{
+    /* height: 200px; */
+    width: 100%;
+    /* background-color: gold; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 120px;
+
+    & .d-shape2 {
+        /* background-color: red; */
+        height: 30px;
+
+        & img {
+            /* background-color: blue; */
+            height: 15px;
+            animation: shape2 1s ease-in-out infinite alternate;
+        }
+    }
+
+    & .prands{
+        opacity: .7;
+        /* height: 200px; */
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        /* background-color: black; */
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+
+        & .prand{
+            height: 50px;
+            width: 50px;
+            /* background-color: red; */
+
+            & .imgs{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+
+            }
+        }
+    }
+}
+
+@keyframes shape2 {
+    0%{
+        transform: translatey(3px);
+    }
+    
+    100%{
+        transform: translatey(0px);
+
+    }
+
+}
+
+
+
+.DownSec > .sec3 {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+
+
+    & .img-m-s{
+        position: relative;
+        height: 300px;
+        /* min-height: 200px; */
+        flex: 1 1 300px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        z-index: 9;
+            
+        & .imgs{
+            position: relative;
+            height: 120%;
+            /* width: 100%; */
+            object-fit: contain;
+            position: absolute;
+        }
+        
+        & .img-r{
+            right: 0px;
+
+        }
+
+        & .img-l{
+            left: 0px;
+
+        }
+    }
+
+    
+    .d-sec3-txt-1{
+        flex: 1 1 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: rebeccapurple; */
+
+        & h1{
+            /* color: rgb(2,164,146); */
+        }
+    }
+
+    
+}
+@media(max-width: 768px){
+    .DownSec > .sec3 {
+
+        & .img-m-s{
+            height: 200px;
+        }
+    }
+                
+}
