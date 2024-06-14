@@ -77,7 +77,7 @@
 }
 
 
-.DownSec > .sec2{
+.DownSec .sec2{
     /* height: 200px; */
     width: 100%;
     /* background-color: gold; */
