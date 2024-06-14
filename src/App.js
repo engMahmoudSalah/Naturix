@@ -46,8 +46,8 @@ function App() {
 
   return (
     <div className="App">
-     {/* <RouterProvider router={router} /> */}
-     <Recipe/>
+     <RouterProvider router={router} />
+     {/* <Recipe/> */}
      
     </div>
   );
