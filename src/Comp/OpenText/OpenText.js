@@ -46,7 +46,7 @@ const Accordion = () => {
         onClick={() => handleClick(2)}
         className={activeIndex === 2 ? "active" : ""}
       >
-        AI-Based Recepe recommendation
+        AI-Based Recepe Recommendation
       </h2>
       {activeIndex === 2 && (
         <div className=" text-sm text-slate-700">
