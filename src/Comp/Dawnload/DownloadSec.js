@@ -29,8 +29,8 @@ function DownloadSec() {
 
         <div className='DownSec '>
             <Navbar/>
-            <div className='sec1 bg-teal-300/5 border-y'>
-                <h1 className='text-center font-display font-medium text-3xl tracking-tight text-slate-900 sm:text-4xl'>Donate Everything<br/> For Nature Better</h1>
+            <div className='sec1 bg-teal-300/5 border-y  '>
+                <h1 className='pt-20 md:pt-0 text-center font-display font-medium text-3xl tracking-tight text-slate-900 sm:text-4xl'>Donate Everything<br/> For Nature Better</h1>
                 <p> can you help <b>help</b> us to better <b>nature</b> </p>
 
                 <div className='d-down-qrcode'>
