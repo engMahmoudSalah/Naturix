@@ -51,7 +51,7 @@ const ResponsiveSlider = () => {
         Coders <span className="font-medium text-teal-600">Team</span>
       </h2>
 
-      <p className="mt-4 font-semibold text-slate-600 ">Dr / Rasha Rizk</p>
+      <p className="mt-4 font-semibold text-slate-600 ">Dr / Rasha El-Hadry</p>
       <p className="text-sm text-gray-400  text-slate-100 lnline-block bg-teal-600"> Under supervision </p>
       <Slider {...settings}>
         <div className="gap" style={{display: "flex"}}>
@@ -72,7 +72,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p>Mohamed saeed</p>
+          <p>Mohamed Saeed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
 
         </div>
@@ -102,7 +102,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p> samaher ahmed</p>
+          <p> Samaher Ahmed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
         </div>
 
@@ -111,7 +111,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p>mariem mostafa</p>
+          <p>Mariam Moustafa</p>
           <p className="text-sm text-gray-400 mb-10">back-end developer</p>
         </div>
 
@@ -120,7 +120,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p>alaa ahmed</p>
+          <p>Alaa Ahmed </p>
           <p className="text-sm text-gray-400 mb-10">flutter developer</p>
         </div>
 
@@ -129,7 +129,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p>haneen </p>
+          <p>Haneen Mohamed  </p>
           <p className="text-sm text-gray-400 mb-10">UI / UX designer</p>
         </div>
 
@@ -138,7 +138,7 @@ const ResponsiveSlider = () => {
           <div className="d-img">
             <img src={img1} alt="Slide 1" />
           </div>{" "}
-          <p>nourhan</p>
+          <p>Nourhan Mohamed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
         </div>
 
