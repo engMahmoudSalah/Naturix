@@ -32,7 +32,7 @@ const Info3 = () => {
   return (
     <div className="Info3">
       <section
-        id="features"
+        id=""
         aria-label="Features for reducing food waste"
         className="relative mt-12 overflow-hidden bg-teal-600 pb-28 pt-20 sm:py-32"
       >
@@ -67,9 +67,9 @@ const Info3 = () => {
                   <div
                   
                     key={tab.name}
-                    className={`group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 hover:bg-white/10 lg:hover:bg-white/5 ${
+                    className={`group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6 hover:bg-white/10 lg:hover:bg-white/5  ${
                       selectedTab === tab.name
-                        ? "bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10"
+                        ? "bg-white/10 lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10 border sm:border-0"
                         : ""
                     }`}
                     onClick={() => setSelectedTab(tab.name)}
@@ -80,7 +80,7 @@ const Info3 = () => {
                       <button
                         className={`font-display text-lg ui-not-focus-visible:outline-none ${
                           selectedTab === tab.name
-                            ? "text-teal-600 lg:text-white"
+                            ? " text-white lg:text-white"
                             : "text-blue-100 hover:text-white lg:text-white"
                         }`}
                       >

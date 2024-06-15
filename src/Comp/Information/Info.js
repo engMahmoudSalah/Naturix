@@ -10,6 +10,7 @@ const Info = () => {
       data-aos-duration="1000"
       data-aos-delay="200"
       className="Info"
+      id="features"
     >
       <div className="contanier">
         <div className="item">

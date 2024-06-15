@@ -20,7 +20,7 @@ const Footer2 = () => {
             <img className="w-auto h-7" src={logo2} alt="" />
         </div>
               </div>
-              <nav className="mt-11 flex gap-8">
+              <nav className="mt-11 flex flex-wrap gap-8">
                 <a
                   className="relative hover:bg-slate-200 -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
                   href="/#features"

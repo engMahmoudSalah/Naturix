@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
+  // { name: 'Dashboard', href: '#', current: true },
+  { name: 'Features', href: '/#features', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
 ];
@@ -65,6 +65,24 @@ export default function Example() {
                   />
                  </Link>
                 </div>
+                  {/* links nav device design */}
+                <div className="hidden sm:flex items-center justify-center sm:ml-12 ">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current ? 'bg-gray-900 text-white' : 'border-y-[1.5px] border-transparent text-slate-800  transition-[1s]  hover:text-teal-600 hover:bg-white/70',
+                          ' px-3 py-2 text-sm '
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
 
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -91,8 +109,8 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current ? 'bg-gray-900 text-white' : 'text-slate-800 border-b hover:bg-gray-700 hover:text-white',
+                    'block hover:rounded-md px-3 last:border-0 py-2 text-base '
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -106,3 +124,7 @@ export default function Example() {
     </Disclosure>
   );
 }
+
+
+
+

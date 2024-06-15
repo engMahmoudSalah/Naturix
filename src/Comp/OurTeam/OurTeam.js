@@ -45,7 +45,7 @@ const ResponsiveSlider = () => {
   };
 
   return (
-    <div className="relative overflow-hidden py-20 bg-teal-300/5 sm:py-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+    <div className="OurTeam relative overflow-hidden py-20 bg-teal-300/5 sm:py-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
       <h2 className="border-b pb-4 font-display font-medium text-3xl tracking-tight text-slate-900 sm:text-4xl">
         {" "}
         Coders <span className="font-medium text-teal-600">Team</span>
