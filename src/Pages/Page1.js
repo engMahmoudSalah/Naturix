@@ -16,6 +16,7 @@ import Footer2 from "../Comp/Footer2/Footer2.js";
 import RecipeRecommender from "../Comp/Recipe/Recipe.js";
 import Try from "../Comp/Try/Try.jsx";
 import AudioPlayer from "../Comp/AudioPlayer/AudioPlayer.js";
+import Pricing from "../Comp/Pricing/Pricing.js";
 
 const Page1 = () => {
   return (
@@ -28,6 +29,7 @@ const Page1 = () => {
       <Info4/>
       <GetSection/>
       <Opinions/>
+      <Pricing/>
       {/* <Quate /> */}
       <OurTeam/>
       <Questions/>

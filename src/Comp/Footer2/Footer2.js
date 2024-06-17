@@ -29,9 +29,9 @@ const Footer2 = () => {
                 </a>
                 <a
                   className="relative hover:bg-slate-200 -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
-                  href="/#reviews"
+                  href="/#vision"
                 >
-                  <span className="relative z-10">Reviews</span>
+                  <span className="relative z-10">Our Vision</span>
                 </a>
                 <a
                   className="relative hover:bg-slate-200 -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
@@ -41,7 +41,7 @@ const Footer2 = () => {
                 </a>
                 <a
                   className="relative hover:bg-slate-200 -mx-3 -my-2 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-0"
-                  href="/#faqs"
+                  href="/#faq"
                 >
                   <span className="relative z-10">FAQs</span>
                 </a>

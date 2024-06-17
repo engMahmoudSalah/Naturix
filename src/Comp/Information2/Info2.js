@@ -6,7 +6,7 @@ const Info2 = () => {
 
 
   return (
-    <div data-aos="fade-up" data-aos-delay="200" className="Info2">
+    <div id="vision" data-aos="fade-up" data-aos-delay="200" className="Info2">
       <div
         style={{
           display: "flex",

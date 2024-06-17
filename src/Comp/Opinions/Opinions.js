@@ -1,5 +1,12 @@
 import React from "react";
 
+import m1 from "../../Img/m1.jpg"
+import m2 from "../../Img/m2.jpg"
+import m3 from "../../Img/m3.jpg"
+import w1 from "../../Img/w1.jpg"
+import w2 from "../../Img/w2.jpg"
+import w3 from "../../Img/w3.jpg"
+
 const Opinions = () => {
   return (
     <div className="Opinions">
@@ -61,8 +68,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-1.c78616b7.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-1.c78616b7.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-1.c78616b7.png&w=128&q=75"
+                          src={m1}
                         />
                       </div>
                     </figcaption>
@@ -104,8 +110,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=128&q=75"
+                          src={w1}
                         />
                       </div>
                     </figcaption>
@@ -151,8 +156,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-5.e7f7faf2.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-5.e7f7faf2.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-5.e7f7faf2.png&w=128&q=75"
+                          src={w2}
                         />
                       </div>
                     </figcaption>
@@ -194,8 +198,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-2.c72e5a40.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-2.c72e5a40.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-2.c72e5a40.png&w=128&q=75"
+                          src={m2}
                         />
                       </div>
                     </figcaption>
@@ -241,8 +244,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-3.eaa9ef6f.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-3.eaa9ef6f.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-3.eaa9ef6f.png&w=128&q=75"
+                          src={m3}
                         />
                       </div>
                     </figcaption>
@@ -284,8 +286,7 @@ const Opinions = () => {
                           data-nimg={1}
                           className="h-14 w-14 object-cover"
                           style={{ color: "transparent" }}
-                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=64&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=128&q=75 2x"
-                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=128&q=75"
+                          src={w3}
                         />
                       </div>
                     </figcaption>

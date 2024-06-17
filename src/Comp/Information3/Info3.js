@@ -8,25 +8,25 @@ const Info3 = () => {
       name: "Proper Storage",
       description:
         "Learn how to store foods correctly to increase their shelf life and reduce waste.",
-      image: require("../../Img/Proper Storage.jpg"),
+      image: require("../../Img/Proper Storage1.jpg"),
     },
     {
       name: "Food Preservation Methods",
       description:
         "Explore the best methods for preserving different types of foods to maintain their quality and flavor.",
-      image: require("../../Img/pp1.jpg"),
-    },
+        image: require("../../Img/Proper Storage2.jpg"),
+      },
     {
       name: "Reusing Leftovers",
       description: "Ideas for reusing leftovers in new and delicious recipes.",
-      image: require("../../Img/pp2.jpg"),
+      image: require("../../Img/Proper Storage3.jpg"),
     },
     {
       name: "Meal Planning",
       description:
         "Learn how to plan meals in a way that helps reduce waste and increase benefits.",
-      image: require("../../Img/pp3.jpg"),
-    },
+        image: require("../../Img/Proper Storage4.jpg"),
+      },
   ];
 
   return (

@@ -6,8 +6,8 @@ import logo from "../../Img/logo.png"; // Import the logo
 
 const navigation = [
   { name: 'Features', href: '/#features', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Our Vision', href: '/#vision', current: false },
+  { name: 'FAQs', href: '/#faq', current: false },
 ];
 
 function classNames(...classes) {
