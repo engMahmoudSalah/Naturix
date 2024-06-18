@@ -1,11 +1,11 @@
 import React from "react";
 
-import m1 from "../../Img/m1.jpg"
-import m2 from "../../Img/m2.jpg"
-import m3 from "../../Img/m3.jpg"
-import w1 from "../../Img/w1.jpg"
-import w2 from "../../Img/w2.jpg"
-import w3 from "../../Img/w3.jpg"
+import m1 from "../../Img/m1 (1).jpg"
+import m2 from "../../Img/m2 (1).jpg"
+import m3 from "../../Img/m3 (1).jpg"
+import w1 from "../../Img/w1 (1).jpg"
+import w2 from "../../Img/w2 (1).jpg"
+import w3 from "../../Img/w3 (1).jpg"
 
 const Opinions = () => {
   return (
