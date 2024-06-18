@@ -6,7 +6,7 @@ const Pricing = () => {
       <section
         id="pricing"
         aria-label="Pricing"
-        className="bg-teal-300/5 bg-gradient-to-r from-white via-teal-500  to-[#fff] py-20 sm:py-32"
+        className="bg-teal-300/5 bg-gradient-to-r from-teal-200 to-white py-20 sm:py-32"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="md:text-center">
