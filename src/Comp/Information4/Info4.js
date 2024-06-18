@@ -21,13 +21,17 @@ const Info4 = () => {
         className="pb-14 bg-teal-300/5 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div data-aos="fade-up" data-aos-delay="200" className="mx-auto max-w-2xl md:text-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="mx-auto max-w-2xl md:text-center"
+          >
             <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-              Simplify everyday business tasks.
+              Simplifying Daily Food Management Tasks.
             </h2>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              Because you’d probably be a little confused if we suggested you
-              complicate your everyday business tasks instead.
+              Because it’s likely you might be unsure about how to manage your
+              daily food tasks instead of wasting it.
             </p>
           </div>
 
@@ -35,7 +39,11 @@ const Info4 = () => {
           <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
             <div>
               {/*  */}
-              <div data-aos="fade-up" data-aos-delay="200" className="mx-auto max-w-2xl">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="mx-auto max-w-2xl"
+              >
                 <div className="w-9 rounded-lg bg-teal-600">
                   <svg aria-hidden="true" className="h-9 w-9" fill="none">
                     <defs>
@@ -61,23 +69,24 @@ const Info4 = () => {
                   </svg>
                 </div>
                 <h3 className="mt-6 text-sm font-medium text-teal-600">
-                  Reporting
+                  Food Inventory
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Stay on top of things with always up-to-date reporting
-                  features.
+                  Never lose track of what's in your inventory by maintaining
+                  accurate tracking.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  We talked about reporting in the section above but we needed
-                  three items here, so mentioning it one more time for
-                  posterity.
+                  We don’t just do this once in our program, but we follow this
+                  statement permanently. Tracking inventory helps you ensure
+                  there is no unnecessary surplus.
                 </p>
               </div>
               {/*  */}
               <div className="relative mt-10 pb-10">
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
                 <div
-                data-aos="fade-up" data-aos-delay="200"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   style={{
                     maxHeight: "450px",
                     display: "flex",
@@ -102,7 +111,11 @@ const Info4 = () => {
               </div>
             </div>
             <div>
-              <div data-aos="fade-up" data-aos-delay="200" className="mx-auto max-w-2xl">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="mx-auto max-w-2xl"
+              >
                 <div className="w-9 rounded-lg bg-teal-600">
                   <svg aria-hidden="true" className="h-9 w-9" fill="none">
                     <path
@@ -122,22 +135,23 @@ const Info4 = () => {
                   </svg>
                 </div>
                 <h3 className="mt-6 text-sm font-medium text-teal-600">
-                  Inventory
+                  Donation Contacts
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Never lose track of what’s in stock with accurate inventory
-                  tracking.
+                  Organize all your contacts for charities and recycling
+                  facilities in one place.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  We don’t offer this as part of our software but that statement
-                  is inarguably true. Accurate inventory tracking would help you
-                  for sure.
+                  This is not just organization; we aim to make the donation
+                  process easy and quick. We can also help you find the nearest
+                  charity or recycling facility.
                 </p>
               </div>
               <div className="relative mt-10 pb-10">
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
                 <div
-                data-aos="fade-up" data-aos-delay="200"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   style={{
                     maxHeight: "450px",
                     display: "flex",
@@ -162,7 +176,11 @@ const Info4 = () => {
               </div>
             </div>
             <div>
-              <div data-aos="fade-up" data-aos-delay="200" className="mx-auto max-w-2xl">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="mx-auto max-w-2xl"
+              >
                 <div className="w-9 rounded-lg bg-teal-600">
                   <svg aria-hidden="true" className="h-9 w-9" fill="none">
                     <path
@@ -177,22 +195,24 @@ const Info4 = () => {
                   </svg>
                 </div>
                 <h3 className="mt-6 text-sm font-medium text-teal-600">
-                  Contacts
+                  Generate Reports
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Organize all of your contacts, service providers, and invoices
-                  in one place.
+                  Create detailed reports to analyze the performance of managing
+                  surplus food.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  This also isn’t actually a feature, it’s just some friendly
-                  advice. We definitely recommend that you do this, you’ll feel
-                  really organized and professional.
+                  While we don’t create reports ourselves, tracking the
+                  performance of our app is crucial. Consider using specialized
+                  software for this purpose to help you analyze data and make
+                  informed decisions.
                 </p>
               </div>
               <div className="relative mt-10 pb-10">
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
                 <div
-                data-aos="fade-up" data-aos-delay="200"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   style={{
                     maxHeight: "450px",
                     display: "flex",
@@ -218,27 +238,19 @@ const Info4 = () => {
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
           {/*  device screen */}
 
           <div className="hidden lg:mt-20 lg:block ">
             <div
-            data-aos="fade-up" data-aos-delay="600"
+              data-aos="fade-up"
+              data-aos-delay="600"
               className="grid grid-cols-3 gap-x-8"
               role="tablist"
               aria-orientation="horizontal"
             >
               <div
-                className={`relative opacity-75 hover:opacity-100 ${
-                  activeTab === "inventory" ? "opacity-100" : ""
+                className={`relative opacity-80 hover:opacity-100 ${
+                  activeTab === "inventory" ? "opacity-[1]" : ""
                 }`}
                 onClick={() => handleTabClick("inventory")}
               >
@@ -276,23 +288,23 @@ const Info4 = () => {
                     aria-controls="headlessui-tabs-panel-:R2ddqfja:"
                   >
                     <span className="absolute inset-0" />
-                    Inventory
+                    Food Inventory
                   </button>
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Never lose track of what’s in stock with accurate inventory
-                  tracking.
+                  Never lose track of what's in your inventory by maintaining
+                  accurate tracking.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  We don’t offer this as part of our software but that statement
-                  is inarguably true. Accurate inventory tracking would help you
-                  for sure.
+                  We don’t just do this once in our program, but we follow this
+                  statement permanently. Tracking inventory helps you ensure
+                  there is no unnecessary surplus.
                 </p>
               </div>
 
               <div
-                className={`relative opacity-75 hover:opacity-100 ${
-                  activeTab === "contacts" ? "opacity-100" : ""
+                className={`relative opacity-80 hover:opacity-100 ${
+                  activeTab === "contacts" ? "opacity-[1]" : ""
                 }`}
                 onClick={() => handleTabClick("contacts")}
               >
@@ -325,24 +337,23 @@ const Info4 = () => {
                     aria-controls="headlessui-tabs-panel-:R3ddqfja:"
                   >
                     <span className="absolute inset-0" />
-                    Contacts
+                    Donation Contacts
                   </button>
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Organize all of your contacts, service providers, and invoices
-                  in one place.
+                  Organize all your contacts for charities and recycling
+                  facilities in one place.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  This also isn’t actually a feature, it’s just some friendly
-                  advice. We definitely recommend that you do this, you’ll feel
-                  really organized and professional.
+                  This is not just organization; we aim to make the donation
+                  process easy and quick. We can also help you find the nearest
+                  charity or recycling facility.
                 </p>
               </div>
 
               <div
-                
-                className={`relative opacity-75 hover:opacity-100 ${
-                  activeTab === "reports" ? "opacity-100" : ""
+                className={`relative opacity-80 hover:opacity-100 ${
+                  activeTab === "reports" ? "opacity-[1]" : ""
                 }`}
                 onClick={() => handleTabClick("reports")}
               >
@@ -382,16 +393,18 @@ const Info4 = () => {
                     aria-controls="headlessui-tabs-panel-:R4ddqfja:"
                   >
                     <span className="absolute inset-0" />
-                    Reports
+                    Generate Reports
                   </button>
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Generate detailed reports to analyze business performance.
+                  Create detailed reports to analyze the performance of managing
+                  surplus food.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  While we don’t generate reports, keeping track of your
-                  business performance is crucial. Consider using dedicated
-                  software for this.
+                  While we don’t create reports ourselves, tracking the
+                  performance of our app is crucial. Consider using specialized
+                  software for this purpose to help you analyze data and make
+                  informed decisions.
                 </p>
               </div>
             </div>

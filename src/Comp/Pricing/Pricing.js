@@ -8,17 +8,17 @@ const Pricing = () => {
       <section
   id="pricing"
   aria-label="Pricing"
-  className="bg-slate-900 py-20 sm:py-32"
+  className="bg-teal-300/5 py-20 sm:py-32"
 >
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div className="md:text-center">
-      <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+      <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
         <span className="relative whitespace-nowrap">
           <svg
             aria-hidden="true"
             viewBox="0 0 281 40"
             preserveAspectRatio="none"
-            className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400"
+            className="absolute left-0 top-1/2 h-[1em] w-full fill-teal-600"
           >
             <path
               fillRule="evenodd"
@@ -30,23 +30,21 @@ const Pricing = () => {
         </span>{" "}
         {/* */}for everyone.
       </h2>
-      <p className="mt-4 text-lg text-slate-400">
-        It doesn’t matter what size your business is, our software won’t work
-        well for you.
+      <p className="mt-4 text-lg text-slate-800">
+        No matter the size of your household or business, our app will help you manage food waste efficiently.
       </p>
     </div>
     <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
       <section className="flex flex-col rounded-3xl px-6 sm:px-8 lg:py-8">
-        <h3 className="mt-5 font-display text-lg text-white">Starter</h3>
+        <h3 className="mt-5 font-display text-lg text-slate-600">Starter</h3>
         <p className="mt-2 text-base text-slate-400">
-          Good for anyone who is self-employed and just getting started.
-        </p>
-        <p className="order-first font-display text-5xl font-light tracking-tight text-white">
+        Ideal for individuals or small households just getting started.        </p>
+        <p className="order-first font-display text-5xl font-light tracking-tight text-teal">
           $9
         </p>
         <ul
           role="list"
-          className="order-last mt-10 flex flex-col gap-y-3 text-sm text-slate-200"
+          className="order-last mt-10 flex flex-col gap-y-3 text-sm text-slate-600"
         >
           <li className="flex">
             <svg
@@ -155,7 +153,7 @@ const Pricing = () => {
           </li>
         </ul>
         <a
-          className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8"
+          className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-slate-600 hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8"
           variant="outline"
           color="white"
           aria-label="Get started with the Starter plan for $9"
@@ -164,7 +162,7 @@ const Pricing = () => {
           Get started
         </a>
       </section>
-      <section className="flex flex-col rounded-3xl px-6 sm:px-8 order-first bg-blue-600 py-8 lg:order-none">
+      <section className="flex flex-col rounded-3xl px-6 sm:px-8 order-first bg-teal-600 py-8 lg:order-none">
         <h3 className="mt-5 font-display text-lg text-white">Small business</h3>
         <p className="mt-2 text-base text-white">
           Perfect for small / medium sized businesses.
@@ -327,7 +325,6 @@ const Pricing = () => {
         <a
           className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white mt-8"
           variant="solid"
-          color="white"
           aria-label="Get started with the Small business plan for $15"
           href="/register"
         >
@@ -335,16 +332,16 @@ const Pricing = () => {
         </a>
       </section>
       <section className="flex flex-col rounded-3xl px-6 sm:px-8 lg:py-8">
-        <h3 className="mt-5 font-display text-lg text-white">Enterprise</h3>
+        <h3 className="mt-5 font-display text-lg text-slate-600">Enterprise</h3>
         <p className="mt-2 text-base text-slate-400">
           For even the biggest enterprise companies.
         </p>
-        <p className="order-first font-display text-5xl font-light tracking-tight text-white">
+        <p className="order-first font-display text-5xl font-light tracking-tight text-teal">
           $39
         </p>
         <ul
           role="list"
-          className="order-last mt-10 flex flex-col gap-y-3 text-sm text-slate-200"
+          className="order-last mt-10 flex flex-col gap-y-3 text-sm text-slate-600"
         >
           <li className="flex">
             <svg
@@ -453,7 +450,7 @@ const Pricing = () => {
           </li>
         </ul>
         <a
-          className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8"
+          className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-slate-600 hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8"
           variant="outline"
           color="white"
           aria-label="Get started with the Enterprise plan for $39"
