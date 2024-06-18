@@ -341,8 +341,8 @@ const Info4 = () => {
                   </button>
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
-                  Organize all your contacts for charities and recycling
-                  facilities in one place.
+                  Organize all of your contacts, service providers, and invoices
+                  in one place.
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
                   This is not just organization; we aim to make the donation

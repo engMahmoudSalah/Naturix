@@ -31,7 +31,7 @@ export default function Example() {
       if (scrollTop > previousScrollY + 200) {
         setShowNavbar(false);
         previousScrollY = scrollTop;
-      } else if (scrollTop < previousScrollY - 30) {
+      } else if (scrollTop < previousScrollY - 50) {
         setShowNavbar(true);
         previousScrollY = scrollTop;
       }
