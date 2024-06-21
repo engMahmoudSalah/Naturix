@@ -5,17 +5,22 @@ import "./OurTeam.css";
 // imgs
 import img1 from "../../Img/myImg.jpg";
 import img2 from "../../Img/ahmedMagdy.jpg";
+import img3 from "../../Img/haneen.jpg";
+import img4 from "../../Img/bakr2.jpg";
+import man from "../../Img/man.jpg";
+import we from "../../Img/we.jpg";
+
 
 const ResponsiveSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 10000,
+    speed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: false,
-    autoplaySpeed: 10000,
+    arrows: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -61,16 +66,18 @@ const ResponsiveSlider = () => {
           <p>Mahmoud Salah</p>
           <p className="text-sm text-gray-400 mb-10">front-end developer</p>
         </div>
+
         <div className="gap">
           <div className="d-img">
             <img src={img2} alt="Slide 1" />
           </div>
-          <p> Ahmed Magdy</p>
+          <p> Ahmed Magdy <span className="text-sm text-gray-400 ml-2  text-slate-100 lnline-block bg-teal-600">Leader</span></p>
           <p className="text-sm text-gray-400 mb-10"> back-end developer</p>
         </div>
+
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={man} alt="Slide 1" />
           </div>{" "}
           <p>Mohamed Saeed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
@@ -79,7 +86,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={img4} alt="Slide 1" />
           </div>{" "}
           <p>Ahmed bakr</p>
           <p className="text-sm text-gray-400 mb-10">flutter developer</p>
@@ -90,7 +97,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={man} alt="Slide 1" />
           </div>{" "}
           <p> ahmed fayez</p>
           <p className="text-sm text-gray-400 mb-10">flutter developer</p>
@@ -100,7 +107,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={we} alt="Slide 1" />
           </div>{" "}
           <p> Samaher Ahmed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
@@ -109,7 +116,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={we} alt="Slide 1" />
           </div>{" "}
           <p>Mariam Moustafa</p>
           <p className="text-sm text-gray-400 mb-10">back-end developer</p>
@@ -118,7 +125,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={we} alt="Slide 1" />
           </div>{" "}
           <p>Alaa Ahmed </p>
           <p className="text-sm text-gray-400 mb-10">flutter developer</p>
@@ -127,7 +134,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={img3} alt="Slide 1" />
           </div>{" "}
           <p>Haneen Mohamed  </p>
           <p className="text-sm text-gray-400 mb-10">UI / UX designer</p>
@@ -136,7 +143,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={img1} alt="Slide 1" />
+            <img src={we} alt="Slide 1" />
           </div>{" "}
           <p>Nourhan Mohamed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
