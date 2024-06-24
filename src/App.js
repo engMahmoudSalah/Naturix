@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./index.css";
-import "./App.css";
+// import "./App.css";
 import Page1 from "./Pages/Page1";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./Comp/ErrorPage/ErrorPage";
@@ -61,8 +61,8 @@ function App() {
   return (
     <div className="App">
       {showLoading ? (
-        <div className="d-loading">
-          <img className="loadingg" src={img} />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <img className="h-16 animate-recyclee mx-auto block recyclee" src={img} />
         </div>
       ) : (
         <RouterProvider router={router} />

@@ -37,7 +37,7 @@
   }
 }
 
-.d-loading{
+/* .d-loading{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,9 +54,14 @@
     color: #01A491;
   }
   
-}
+} */
 
 @keyframes  recyclee{
   0% {transform:rotatez(0deg);}
   60%,100%{transform:rotatez(360deg);}
+}
+
+
+.recyclee{
+  animation: recyclee 1s  ease-in-out infinite both ;
 }

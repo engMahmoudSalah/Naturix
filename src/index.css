@@ -17,3 +17,14 @@
     font-family: 'Lexend';
 
 }
+
+
+@keyframes  recyclee{
+  0% {transform:rotatez(0deg);}
+  60%,100%{transform:rotatez(360deg);}
+}
+
+
+.recyclee{
+  animation: recyclee 1s  ease-in-out infinite both ;
+}
