@@ -13,7 +13,7 @@ import GetSection from "../Comp/GetSection/GetSection.js";
 import Quate from "../Comp/quate/quate.js";
 import Opinions from "../Comp/Opinions/Opinions.js";
 import Footer2 from "../Comp/Footer2/Footer2.js";
-import RecipeRecommender from "../Comp/Recipe/Recipe.js";
+import RecipeRecommender from "../Comp/Recipe/RecipeDetail.js";
 import Try from "../Comp/Try/Try.jsx";
 import AudioPlayer from "../Comp/AudioPlayer/AudioPlayer.js";
 import Pricing from "../Comp/Pricing/Pricing.js";
@@ -35,8 +35,7 @@ const Page1 = () => {
       <Questions/>
       {/* <Footer1/> */}
       <Footer2/>
-      <RecipeRecommender/>
-      <Try/>
+      {/* <Try/> */}
       <AudioPlayer/>
     </div>
   );

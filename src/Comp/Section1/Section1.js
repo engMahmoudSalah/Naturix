@@ -100,8 +100,10 @@ export default function Example() {
             <a
               class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-400 text-slate-700 hover:text-slate-900 hover:ring-slate-500 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300"
               variant="outline"
+              target="_blank"
               color="slate"
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://youtu.be/kkURdA32giI?si=YUhb7C7vy8KEzM8Z"
+              // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> YOUTUBE >>>>>>>
             >
               <svg
                 aria-hidden="true"

@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.d-loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  .loadingg{
+    height: 60px;
+    animation: recyclee 1s  ease-in-out infinite both ;
+    margin: 0px auto;
+    display: block;
+  }
+
+  .spann{
+    color: #01A491;
+  }
+  
+}
+
+@keyframes  recyclee{
+  0% {transform:rotatez(0deg);}
+  60%,100%{transform:rotatez(360deg);}
+}
