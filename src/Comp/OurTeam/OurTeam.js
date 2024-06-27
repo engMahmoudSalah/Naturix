@@ -7,6 +7,9 @@ import img1 from "../../Img/myImg.jpg";
 import img2 from "../../Img/ahmedMagdy.jpg";
 import img3 from "../../Img/haneen.jpg";
 import img4 from "../../Img/bakr2.jpg";
+import img5 from "../../Img/nour.jpg";
+import img6 from "../../Img/Mandor.jpg";
+import img7 from "../../Img/sama.jpg";
 import man from "../../Img/man.jpg";
 import we from "../../Img/we.jpg";
 
@@ -77,7 +80,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={man} alt="Slide 1" />
+            <img src={img6} alt="Slide 1" />
           </div>{" "}
           <p>Mohamed Saeed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
@@ -107,7 +110,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={we} alt="Slide 1" />
+            <img src={img7} alt="Slide 1" />
           </div>{" "}
           <p> Samaher Ahmed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
@@ -143,7 +146,7 @@ const ResponsiveSlider = () => {
 
         <div className="gap">
           <div className="d-img">
-            <img src={we} alt="Slide 1" />
+            <img src={img5} alt="Slide 1" />
           </div>{" "}
           <p>Nourhan Mohamed </p>
           <p className="text-sm text-gray-400 mb-10">machine learning</p>
