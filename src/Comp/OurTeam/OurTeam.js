@@ -59,8 +59,8 @@ const ResponsiveSlider = () => {
         Coders <span className="font-medium text-teal-600">Team</span>
       </h2>
 
-      <p className="mt-4 font-semibold text-slate-600 ">Dr / Rasha El-Hadry</p>
-      <p className="text-sm text-gray-400  text-slate-100 lnline-block bg-teal-600"> Under supervision </p>
+      <p className="mt-4 font-semibold text-2xl text-slate-600 text-center flex justify-center">Dr / Rasha El-Hadry</p>
+      <p className="text-lg text-gray-400 text-slate-100  text-center mt-3 bg-teal-600 flex justify-center"> Under supervision </p>
       <Slider {...settings}>
         <div className="gap" style={{display: "flex"}}>
           <div className="d-img">
