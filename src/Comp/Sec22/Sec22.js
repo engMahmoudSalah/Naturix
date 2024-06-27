@@ -3,13 +3,13 @@ import "./sec22.css";
 import "../Dawnload/DownloadSec.css";
 
 // brands
-import pr1 from "../../Img/pr1.png";
-import pr2 from "../../Img/pr2.png";
-import pr3 from "../../Img/pr3.png";
-import pr4 from "../../Img/pr4.png";
-import pr5 from "../../Img/pr5.png";
-import pr6 from "../../Img/pr6.png";
-import pr7 from "../../Img/pr7.png";
+import pr1 from "../../Img/pr1 copy.png";
+import pr2 from "../../Img/pr2 copy.png";
+import pr3 from "../../Img/pr3 copy.png";
+import pr4 from "../../Img/pr4 copy.png";
+import pr5 from "../../Img/pr5 copy.png";
+import pr6 from "../../Img/pr6 copy.png";
+import pr7 from "../../Img/pr7 copy.png";
 import pr8 from "../../Img/pr8.png";
 import pr9 from "../../Img/pr9.png";
 // import MS1 from "../../img2/mobile_s1.png"

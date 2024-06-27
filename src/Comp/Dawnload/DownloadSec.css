@@ -100,7 +100,7 @@
         }
     
         & .prands{
-            opacity: .7;
+            opacity: .9;
             /* height: 200px; */
             width: 100%;
             display: flex;
@@ -112,8 +112,8 @@
             padding: 20px;
     
             & .prand{
-                height: 50px;
-                width: 50px;
+                height: 60px;
+                width: 60px;
                 /* background-color: red; */
     
                 & .imgs{

@@ -25,28 +25,30 @@
 
 
 
-    & .prands{
-        opacity: .7;
-        /* height: 200px; */
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        /* background-color: black; */
-        gap: 30px;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px;
-
-        & .prand{
-            height: 50px;
-            width: 50px;
-            /* background-color: red; */
-
-            & .imgs{
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
-
+    .sec2{
+        & .prands{
+            opacity: 1;
+            /* height: 200px; */
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            /* background-color: black; */
+            gap: 30px;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+    
+            & .prand{
+                height: 70px;
+                width: 70px;
+                /* background-color: red; */
+    
+                & .imgs{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+    
+                }
             }
         }
     }
