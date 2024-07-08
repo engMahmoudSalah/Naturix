@@ -21,6 +21,7 @@ import MS2 from "../../Img/‏‏mobile_s2.png"
 
 import Navbar from "../Navbar/Navbar.js"
 import Footer2 from '../Footer2/Footer2.js';
+import StarsCanvas from '../StarsCanvas.jsx';
 
 
 
@@ -29,6 +30,7 @@ function DownloadSec() {
 
         <div className='DownSec '>
             <Navbar/>
+            <StarsCanvas/>
             <div className='sec1 bg-teal-300/5 border-y  '>
                 <h1 className='pt-16 md:pt-0 text-center font-display font-medium text-3xl tracking-tight text-slate-900 sm:text-4xl'>Donate Everything<br/> For Nature Better</h1>
                 <p> can you help <b>help</b> us to better <b>nature</b> </p>

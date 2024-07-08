@@ -17,6 +17,7 @@ import RecipeRecommender from "../Comp/Recipe/RecipeDetail.js";
 import Try from "../Comp/Try/Try.jsx";
 import AudioPlayer from "../Comp/AudioPlayer/AudioPlayer.js";
 import Pricing from "../Comp/Pricing/Pricing.js";
+import BallCanvas from "../Comp/StarsCanvas.jsx";
 
 const Page1 = () => {
   return (
@@ -37,6 +38,7 @@ const Page1 = () => {
       <Footer2/>
       {/* <Try/> */}
       <AudioPlayer/>
+      
     </div>
   );
 };

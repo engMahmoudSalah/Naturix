@@ -15,6 +15,7 @@ import RecipeDetail from "./Comp/Recipe/RecipeDetail.js";
 
 // images
 import img from "./Img/logo.png";
+import Try from "./Comp/Try/Try.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,10 +29,10 @@ const router = createBrowserRouter([
     element: <DownloadSec />,
   },
 
-  // {
-  //   path: "/",
-  //   element: <RecipeCard/>,
-  // },
+  {
+    path: "/try",
+    element: <Try/>,
+  },
 
   // {
   //   path: "/recipe/:name",

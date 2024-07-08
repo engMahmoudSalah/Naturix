@@ -1,8 +1,12 @@
 import React from 'react'
+import StarsCanvas from '../StarsCanvas'
 
 const Try = () => {
   return (
-    <div className='Try bg-teal-100'>
+    <div className='Try bg-[#030014]  h-[100vh] w-full flex justify-center items-center'>
+      <StarsCanvas/>
+
+      <p className='text-6xl text-white font-medium p-5 text-center'>Mahmoud Salah Mohamed</p>
 
 
 
