@@ -3,11 +3,15 @@ import StarsCanvas from '../StarsCanvas'
 
 const Try = () => {
   return (
-    <div className='Try bg-[#030014]  h-[100vh] w-full flex justify-center items-center'>
+    <div className='Try bg-[#030014]  h-[100vh] w-full flex flex-col justify-center gap-7 items-center text-6xl text-white font-medium p-5 text-center'>
       <StarsCanvas/>
 
       <p className='text-6xl text-white font-medium p-5 text-center'>Mahmoud Salah Mohamed</p>
 
+      <p className='text-3xl text-white font-medium text-center'>mmss1001101@gmail.com</p>
+      <p className='text-3xl text-white font-medium  text-center'>01022420372</p>
+
+     
 
 
     </div>
