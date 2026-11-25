@@ -21,7 +21,7 @@ const Info = () => {
 
         <div className="item">
           <h4 className="border-b pb-4 font-display font-medium text-2xl tracking-tight text-slate-900 sm:text-3xl">
-            Our commitment to <span className="font-medium text-teal-600">green energy</span> is paving the way for a cleaner,
+            Our commitment to <span className="font-medium text-teal-700">green energy</span> is paving the way for a cleaner,
             healthier planet.
           </h4>
           <div data-aos="fade-right" data-aos-delay="200" className="slice">

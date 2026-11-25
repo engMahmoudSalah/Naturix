@@ -68,7 +68,7 @@ const Info4 = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="mt-6 text-sm font-medium text-teal-600">
+                <h3 className="mt-6 text-sm font-medium text-teal-700">
                   Food Inventory
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
@@ -134,7 +134,7 @@ const Info4 = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="mt-6 text-sm font-medium text-teal-600">
+                <h3 className="mt-6 text-sm font-medium text-teal-700">
                   Donation Contacts
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">
@@ -194,7 +194,7 @@ const Info4 = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="mt-6 text-sm font-medium text-teal-600">
+                <h3 className="mt-6 text-sm font-medium text-teal-700">
                   Generate Reports
                 </h3>
                 <p className="mt-2 font-display text-xl text-slate-900">

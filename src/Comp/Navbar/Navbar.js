@@ -93,7 +93,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'border-y-[1.5px] border-transparent text-slate-800 transition-[1s] hover:text-teal-600 hover:bg-slate-50',
+                          item.current ? 'bg-gray-900 text-white' : 'border-y-[1.5px] border-transparent text-slate-800 transition-[1s] hover:text-teal-700 hover:bg-slate-50',
                           'px-3 py-2 text-sm'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -106,19 +106,19 @@ export default function Example() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Link data-aos="fade-left" data-aos-delay="200"
-                  to="/recipes" className="font-normal hidden sm:block rounded-full py-2 px-4 text-sm font-semibold text-slate-800 hover:text-teal-600 mr-1">
+                  to="/recipes" className="font-normal hidden sm:block rounded-full py-2 px-4 text-sm font-semibold text-slate-800 hover:text-teal-700 mr-1">
                   Recipes
                 </Link>
                 <Link data-aos="fade-left" data-aos-delay="200"
-                  to="/try" className="font-normal underline lg:block inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 text-teal-600 hover:text-white hover:bg-teal-600 mr-3 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
+                  to="/try" className="font-normal underline lg:block inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 text-teal-700 hover:text-white hover:bg-teal-700 mr-3 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
                   ME
                 </Link>
                 <Link data-aos="fade-left" data-aos-delay="200"
-                  to="/download" className="font-normal hidden lg:block inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-white hover:bg-teal-600 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
+                  to="/download" className="font-normal hidden lg:block inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-700 text-white hover:text-white hover:bg-teal-600 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
                   Download App
                 </Link>
                 <Link data-aos="fade-left" data-aos-delay="200"
-                  to="/download" className="sm:block lg:hidden inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-white hover:bg-teal-600 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
+                  to="/download" className="sm:block lg:hidden inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-700 text-white hover:text-white hover:bg-teal-600 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
                   Download
                 </Link>
               </div>

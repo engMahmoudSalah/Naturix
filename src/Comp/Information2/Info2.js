@@ -34,7 +34,7 @@ const Info2 = () => {
         <div className="item">
           <div className="d-imgs">
             <div className="d-img1">
-              <h1 className="h3 text-3xl pb-8 text-teal-600"> Our vision and goals </h1>
+              <h1 className="h3 text-3xl pb-8 text-teal-700"> Our vision and goals </h1>
               <h4>
                 {" "}
                 Our vision is to build a more sustainable

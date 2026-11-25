@@ -35,7 +35,7 @@ export default function Recipes() {
     <div className="min-h-screen bg-slate-50 text-slate-800">
       <header className="bg-white border-b border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="font-semibold text-teal-600 text-lg">Naturix</Link>
+          <Link to="/" className="font-semibold text-teal-700 text-lg">Naturix</Link>
           <span className="text-sm text-slate-500">AI Recipe Recommender</span>
         </div>
       </header>
