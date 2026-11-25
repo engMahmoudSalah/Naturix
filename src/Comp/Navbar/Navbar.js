@@ -106,6 +106,10 @@ export default function Example() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Link data-aos="fade-left" data-aos-delay="200"
+                  to="/recipes" className="font-normal hidden sm:block rounded-full py-2 px-4 text-sm font-semibold text-slate-800 hover:text-teal-600 mr-1">
+                  Recipes
+                </Link>
+                <Link data-aos="fade-left" data-aos-delay="200"
                   to="/try" className="font-normal underline lg:block inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 text-teal-600 hover:text-white hover:bg-teal-600 mr-3 active:bg-teal-200 active:text-black focus-visible:outline-blue-600">
                   ME
                 </Link>

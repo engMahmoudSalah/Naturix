@@ -16,6 +16,7 @@ import RecipeDetail from "./Comp/Recipe/RecipeDetail.js";
 // images
 import img from "./Img/logo.png";
 import Try from "./Comp/Try/Try.jsx";
+import Recipes from "./Pages/Recipes";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/download",
     element: <DownloadSec />,
+  },
+
+  {
+    path: "/recipes",
+    element: <Recipes />,
   },
 
   {
