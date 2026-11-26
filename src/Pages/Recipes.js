@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { RECIPES, ALL_INGREDIENTS, TAGS } from "../data/recipes";
 
 const KEY = "naturix_pantry";
+const SKEY = "naturix_shop";
 const norm = (s) => s.toLowerCase().trim().replace(/\s+/g, " ").replace(/(es|s)$/, (m, a, off, str) => (str.length > 4 ? "" : m));
 const same = (a, b) => norm(a) === norm(b) || (norm(a).length > 3 && (norm(b).includes(norm(a)) || norm(a).includes(norm(b))));
 
@@ -23,6 +24,11 @@ export default function Recipes() {
   const [tag, setTag] = useState("");
   const [maxMin, setMaxMin] = useState(0);
   const [open, setOpen] = useState(null);
+  const [shop, setShop] = useState(() => { try { const a = JSON.parse(localStorage.getItem(SKEY)); return Array.isArray(a) ? a : []; } catch { return []; } });
+  const [copied, setCopied] = useState(false);
+  useEffect(() => { try { localStorage.setItem(SKEY, JSON.stringify(shop)); } catch {} }, [shop]);
+  const addMissing = (r) => { const miss = r.ingredients.filter((i) => !pantry.some((p) => same(p, i)) && !shop.some((x) => x.n === i)); if (miss.length) setShop([...shop, ...miss.map((n) => ({ n, done: false }))]); return miss.length; };
+  const copyList = async () => { const t = shop.filter((x) => !x.done).map((x) => "- " + x.n).join("\n"); try { await navigator.clipboard.writeText(t); } catch {} setCopied(true); setTimeout(() => setCopied(false), 1800); };
   useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(pantry)); } catch {} }, [pantry]);
   useEffect(() => { document.title = "Recipe Recommender | Naturix"; }, []);
   useEffect(() => { const h = (e) => e.key === "Escape" && setOpen(null); window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h); }, []);
@@ -65,6 +71,22 @@ export default function Recipes() {
           </div>
         </section>
 
+        {shop.length > 0 && (
+          <section className="mt-6 rounded-2xl bg-white p-5 shadow-sm border border-slate-200" aria-label="Shopping list" data-testid="shop-list">
+            <div className="flex flex-wrap items-center gap-3">
+              <h2 className="font-semibold text-slate-900">Shopping list <span className="text-sm font-normal text-slate-500">({shop.filter((x) => !x.done).length} to buy)</span></h2>
+              <button type="button" onClick={copyList} className="ml-auto text-sm text-teal-700 underline" aria-live="polite">{copied ? "Copied" : "Copy list"}</button>
+              <button type="button" onClick={() => setShop(shop.filter((x) => !x.done))} className="text-sm text-slate-500 underline">Remove checked</button>
+              <button type="button" onClick={() => setShop([])} className="text-sm text-slate-500 underline">Clear</button>
+            </div>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {shop.map((x) => (
+                <li key={x.n}><label className="flex items-center gap-2 text-slate-700"><input type="checkbox" checked={x.done} onChange={() => setShop(shop.map((y) => (y.n === x.n ? { ...y, done: !y.done } : y)))} className="h-4 w-4 accent-teal-600" /><span className={x.done ? "line-through text-slate-400" : ""}>{x.n}</span></label></li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <p className="mt-6 text-sm text-slate-500" aria-live="polite">{results.length} recipe{results.length === 1 ? "" : "s"}{pantry.length ? " matched" : ""}</p>
         <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {results.map((r) => (
@@ -93,6 +115,7 @@ export default function Recipes() {
             </div>
             <h3 className="mt-5 font-semibold">Ingredients</h3>
             <ul className="mt-2 flex flex-wrap gap-2">{open.ingredients.map((i) => { const has = pantry.some((p) => same(p, i)); return <li key={i} className={"rounded-full px-3 py-1 text-sm " + (has ? "bg-teal-100 text-teal-800" : "bg-slate-100 text-slate-600")}>{has ? "✓ " : ""}{i}</li>; })}</ul>
+            {open.ingredients.some((i) => !pantry.some((p) => same(p, i))) && <button type="button" onClick={() => addMissing(open)} className="mt-3 rounded-full border border-teal-600 px-4 py-1.5 text-sm font-semibold text-teal-700 hover:bg-teal-50">Add missing to shopping list</button>}
             <h3 className="mt-5 font-semibold">Steps</h3>
             <ol className="mt-2 list-decimal pl-5 space-y-1 text-slate-700">{open.steps.map((s, i) => <li key={i}>{s}.</li>)}</ol>
           </div>
