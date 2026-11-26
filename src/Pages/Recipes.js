@@ -4,6 +4,7 @@ import { RECIPES, ALL_INGREDIENTS, TAGS } from "../data/recipes";
 
 const KEY = "naturix_pantry";
 const SKEY = "naturix_shop";
+const FKEY = "naturix_fav";
 const norm = (s) => s.toLowerCase().trim().replace(/\s+/g, " ").replace(/(es|s)$/, (m, a, off, str) => (str.length > 4 ? "" : m));
 const same = (a, b) => norm(a) === norm(b) || (norm(a).length > 3 && (norm(b).includes(norm(a)) || norm(a).includes(norm(b))));
 
@@ -26,6 +27,10 @@ export default function Recipes() {
   const [open, setOpen] = useState(null);
   const [shop, setShop] = useState(() => { try { const a = JSON.parse(localStorage.getItem(SKEY)); return Array.isArray(a) ? a : []; } catch { return []; } });
   const [copied, setCopied] = useState(false);
+  const [fav, setFav] = useState(() => { try { const a = JSON.parse(localStorage.getItem(FKEY)); return Array.isArray(a) ? a : []; } catch { return []; } });
+  const [onlyFav, setOnlyFav] = useState(false);
+  useEffect(() => { try { localStorage.setItem(FKEY, JSON.stringify(fav)); } catch {} }, [fav]);
+  const toggleFav = (n) => setFav((f) => (f.includes(n) ? f.filter((x) => x !== n) : [...f, n]));
   useEffect(() => { try { localStorage.setItem(SKEY, JSON.stringify(shop)); } catch {} }, [shop]);
   const addMissing = (r) => { const miss = r.ingredients.filter((i) => !pantry.some((p) => same(p, i)) && !shop.some((x) => x.n === i)); if (miss.length) setShop([...shop, ...miss.map((n) => ({ n, done: false }))]); return miss.length; };
   const copyList = async () => { const t = shop.filter((x) => !x.done).map((x) => "- " + x.n).join("\n"); try { await navigator.clipboard.writeText(t); } catch {} setCopied(true); setTimeout(() => setCopied(false), 1800); };
@@ -33,7 +38,8 @@ export default function Recipes() {
   useEffect(() => { document.title = "Recipe Recommender | Naturix"; }, []);
   useEffect(() => { const h = (e) => e.key === "Escape" && setOpen(null); window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h); }, []);
 
-  const results = useMemo(() => rank(pantry, tag, maxMin), [pantry, tag, maxMin]);
+  const ranked = useMemo(() => rank(pantry, tag, maxMin), [pantry, tag, maxMin]);
+  const results = onlyFav ? ranked.filter((r) => fav.includes(r.name)) : ranked;
   const add = (v) => { v = v.trim().toLowerCase(); if (v && !pantry.includes(v) && pantry.length < 30) setPantry([...pantry, v]); setText(""); };
   const suggestions = text ? ALL_INGREDIENTS.filter((i) => i.includes(text.toLowerCase()) && !pantry.includes(i)).slice(0, 6) : [];
 
@@ -65,6 +71,7 @@ export default function Recipes() {
           <div className="mt-4 flex flex-wrap gap-2 items-center">
             <span className="text-sm text-slate-500">Diet:</span>
             {["", ...TAGS].map((t) => <button key={t || "any"} type="button" onClick={() => setTag(t)} aria-pressed={tag === t} className={"rounded-full px-3 py-1 text-sm border " + (tag === t ? "bg-slate-900 text-white border-slate-900" : "bg-white text-slate-700 border-slate-300")}>{t || "any"}</button>)}
+            <button type="button" onClick={() => setOnlyFav(!onlyFav)} aria-pressed={onlyFav} className={"rounded-full border px-3 py-1 text-sm " + (onlyFav ? "bg-teal-700 text-white border-teal-700" : "border-slate-300 text-slate-700")}>Saved ({fav.length})</button>
             <label className="ml-auto text-sm text-slate-600">Max time
               <select value={maxMin} onChange={(e) => setMaxMin(+e.target.value)} className="ml-2 rounded-lg border border-slate-300 px-2 py-1"><option value={0}>any</option><option value={15}>15 min</option><option value={30}>30 min</option><option value={45}>45 min</option></select>
             </label>
@@ -92,7 +99,7 @@ export default function Recipes() {
           {results.map((r) => (
             <button key={r.id} onClick={() => setOpen(r)} className="flex flex-col justify-start text-left rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md hover:border-teal-400 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500">
               <div className="flex items-start justify-between gap-2">
-                <h2 className="font-semibold text-slate-900">{r.name}</h2>
+                <h2 className="font-semibold text-slate-900">{fav.includes(r.name) && <span aria-label="Saved" className="mr-1 text-amber-500">&#9733;</span>}{r.name}</h2>
                 {pantry.length > 0 && <span className="shrink-0 rounded-full bg-teal-100 px-2 py-0.5 text-xs font-semibold text-teal-800">{Math.round(r.score * 100)}%</span>}
               </div>
               <p className="mt-1 text-sm text-slate-500">{r.min} min · {r.kcal} kcal · {r.protein}g protein</p>
@@ -102,7 +109,7 @@ export default function Recipes() {
             </button>
           ))}
         </div>
-        {results.length === 0 && <p className="mt-10 text-center text-slate-500">Nothing matches yet. Add more ingredients or relax the filters.</p>}
+        {results.length === 0 && <p className="mt-10 text-center text-slate-500">{onlyFav ? "No saved recipes in this view. Open a recipe and tap Save recipe." : "Nothing matches yet. Add more ingredients or relax the filters."}</p>}
       </main>
 
       {open && (
@@ -110,6 +117,7 @@ export default function Recipes() {
           <div onClick={(e) => e.stopPropagation()} className="w-full max-w-lg max-h-[90vh] overflow-auto rounded-t-3xl sm:rounded-3xl bg-white p-6">
             <div className="flex justify-between gap-3"><h2 className="text-2xl font-bold">{open.name}</h2><button autoFocus aria-label="Close" onClick={() => setOpen(null)} className="text-2xl leading-none text-slate-500">x</button></div>
             <p className="mt-1 text-slate-500">{open.min} minutes</p>
+            <button type="button" onClick={() => toggleFav(open.name)} aria-pressed={fav.includes(open.name)} className="mt-2 rounded-full border border-amber-500 px-4 py-1.5 text-sm font-semibold text-amber-700 hover:bg-amber-50">{fav.includes(open.name) ? "\u2605 Saved" : "\u2606 Save recipe"}</button>
             <div className="mt-4 grid grid-cols-4 gap-2 text-center text-sm">
               {[["kcal", open.kcal], ["protein", open.protein + "g"], ["carbs", open.carbs + "g"], ["fat", open.fat + "g"]].map(([k, v]) => <div key={k} className="rounded-xl bg-slate-50 p-2"><div className="font-bold text-slate-900">{v}</div><div className="text-xs text-slate-500">{k}</div></div>)}
             </div>
