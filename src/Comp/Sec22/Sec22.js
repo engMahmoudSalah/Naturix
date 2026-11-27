@@ -36,31 +36,31 @@ const Sec22 = () => {
           <div className="d-shape2">{/* <img src={shape2} /> */}</div>
           <div className="prands">
             <div className="prand">
-              <img className="imgs" src={pr1} />
+              <img className="imgs" src={pr1} alt="Partner logo 1" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr2} />
+              <img className="imgs" src={pr2} alt="Partner logo 2" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr3} />
+              <img className="imgs" src={pr3} alt="Partner logo 3" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr4} />
+              <img className="imgs" src={pr4} alt="Partner logo 4" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr5} />
+              <img className="imgs" src={pr5} alt="Partner logo 5" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr6} />
+              <img className="imgs" src={pr6} alt="Partner logo 6" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr7} />
+              <img className="imgs" src={pr7} alt="Partner logo 7" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr8} />
+              <img className="imgs" src={pr8} alt="Partner logo 8" />
             </div>
             <div className="prand">
-              <img className="imgs" src={pr9} />
+              <img className="imgs" src={pr9} alt="Partner logo 9" />
             </div>
           </div>
         </div>
