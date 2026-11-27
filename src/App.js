@@ -66,7 +66,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" role="main">
       {showLoading ? (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img className="h-16 animate-recyclee mx-auto block recyclee" src={img} />
