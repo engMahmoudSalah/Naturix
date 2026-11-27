@@ -30,7 +30,7 @@ export const RECIPES = [
   R("Pasta Aglio e Olio", 15, 540, 14, 76, 20, ["vegan"], ["pasta", "garlic", "olive oil", "chili", "parsley"], "Cook pasta. Gently fry garlic and chili in olive oil. Toss together with parsley."),
   R("Moroccan Chickpea Stew", 35, 410, 16, 62, 11, ["vegan", "high-fiber"], ["chickpea", "tomato", "onion", "carrot", "cumin", "cinnamon"], "Saute onion and carrot with spices. Add tomato and chickpeas, simmer 25 minutes."),
   R("Tomato Egg Scramble", 10, 280, 17, 9, 19, ["vegetarian", "low-carb"], ["egg", "tomato", "onion", "olive oil"], "Cook tomato and onion in oil until soft. Add beaten eggs and stir gently until set."),
-  R("Oatmeal with Banana", 8, 310, 9, 58, 6, ["vegan"], ["oats", "banana", "milk", "cinnamon", "honey"], "Simmer oats in milk. Top with banana, cinnamon and honey."),
+  R("Oatmeal with Banana", 8, 310, 9, 58, 6, ["vegetarian"], ["oats", "banana", "milk", "cinnamon", "honey"], "Simmer oats in milk. Top with banana, cinnamon and honey."),
   R("Lemon Herb Chicken Rice", 30, 530, 40, 54, 15, ["high-protein"], ["chicken", "rice", "lemon", "garlic", "parsley"], "Marinate chicken in lemon and garlic. Pan cook, serve with rice and parsley."),
   R("Cucumber Yogurt Salad", 8, 140, 7, 12, 7, ["vegetarian", "low-carb"], ["cucumber", "yogurt", "garlic", "mint", "olive oil"], "Mix yogurt with grated cucumber, garlic, mint and olive oil."),
   R("Sweet Potato Black Bean Tacos", 30, 450, 14, 72, 12, ["vegan", "high-fiber"], ["sweet potato", "black bean", "tortilla", "onion", "lime"], "Roast sweet potato. Warm beans with onion. Fill tortillas and squeeze lime."),
